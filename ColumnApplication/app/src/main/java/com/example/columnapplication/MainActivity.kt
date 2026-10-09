@@ -6,12 +6,15 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,7 +42,7 @@ fun app() {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Red)
+            .background(Color.Black)
     ) {
         item {
             Image(
@@ -58,6 +61,31 @@ fun app() {
             )
             Text(text = "Suscribete", color = Color.White)
             Text(text = "Hola", color = Color.White)
+            LazyRow(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier.fillMaxWidth().padding(16.dp)
+            ) {
+                item {
+                    Text(text = "KOTLIN", color = Color.White)
+                    Text(text = "PYTHON", color = Color.White)
+                    Text(text = "FULLSTACK", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                    Text(text = "SUSCRIBETE", color = Color.White)
+                }
+            }
         }
     }
 }
